@@ -13,7 +13,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     # 파일명이 길 경우 업로드한 파일명과 정확히 일치시켜주세요.
-    file_path = '202512_202512____________________________.csv'
+    file_path = '202512_202512.csv'
     df = pd.read_csv(file_path, encoding='cp949', thousands=',')
     
     # 전처리: '행정구역'에서 지역명만 추출
