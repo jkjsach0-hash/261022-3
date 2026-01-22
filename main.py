@@ -13,7 +13,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     # 업로드하신 실제 파일명
-    file_path = '202512_202512____________________________.csv'
+    file_path = '202512_202512.csv'
     
     # 데이터 읽기
     df = pd.read_csv(file_path, encoding='cp949', thousands=',')
